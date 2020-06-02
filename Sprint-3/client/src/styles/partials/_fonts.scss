@@ -1,0 +1,6 @@
+@mixin fontaddin($fontSize, $lineHeight, $fontFamily, $fontColor) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-family: $fontFamily;
+    color: $fontColor;
+  }

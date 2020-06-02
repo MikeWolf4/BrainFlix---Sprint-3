@@ -1,0 +1,214 @@
+.upload-main-container {
+    
+    margin-left: 16px;
+    margin-right: 16px;
+    @media (min-width: 768px) {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+}
+
+.upload-main {
+    &__box-borders{
+        
+        @media (min-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            margin-top: 32px;
+            border-top: 1px solid $clrGlobalTextLabelStyle;
+            border-bottom: 1px solid $clrGlobalTextLabelStyle;
+        }
+        @media (min-width: 1440px) {
+            display: flex;
+        }
+    }
+
+	&__title{
+        @include fontaddin(
+            $m_H1Header_FSize,
+            $m_H1Header_LHeight,
+            $fontAvenirBold,
+            $clrBandSiteCtaTextLink
+        );
+        @media (min-width: 768px) {
+            margin-top: 48px;
+        }
+        @media (min-width: 1440px) {
+        }
+	}
+
+	&__image-container{
+        height: 153px;
+        width: 288px;
+       
+        margin: 10px auto;
+        border-radius: 4px;
+        overflow: hidden;
+        @media (min-width: 768px) {
+            height: 183px;
+            width: 344px;
+            margin: 10px 0;
+        }
+        @media (min-width: 1440px) {
+            height: 183px;
+            width: 344px;
+            margin: 10px 0;
+        }
+    }
+    &__image{
+        height: 153px;
+        width: 288px;
+        border-radius: 4px;
+        @media (min-width: 768px) {
+            height: 183px;
+            width: 344px;
+        }
+        @media (min-width: 1440px) {
+            height: 183px;
+            width: 344px;
+        }
+    }
+    &__input-container{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px) {
+        
+        }
+        @media (min-width: 1440px) {
+          width: 100%;
+          padding-left: 24px;
+        }
+    }
+
+	&__label-title{
+        margin-bottom: 4px;
+        @include fontaddin(
+            $m_H5Label_FSize,
+            $m_H5Label_LHeight,
+            $fontAvenirBold,
+            $clrGlobalTextLabelStyle
+        );
+        @media (min-width: 768px) {
+    
+        }
+        @media (min-width: 1440px) {
+          
+        }
+	}
+
+	&__input-title{
+        height: 48px;
+        border: 1px solid $clrGlobalTextLabelStyle;
+        border-radius: 4px;
+        margin-bottom: 42px;
+        padding-left: 16px;
+        
+        @media (min-width: 768px) {
+    
+        }
+        @media (min-width: 1440px) {
+            margin-bottom: 24px;
+        }
+	}
+
+	&__label-description{
+        margin-bottom: 4px;
+        @include fontaddin(
+            $m_H5Label_FSize,
+            $m_H5Label_LHeight,
+            $fontAvenirBold,
+            $clrGlobalTextLabelStyle
+        );
+        @media (min-width: 768px) {
+
+        }  
+        @media (min-width: 1440px) {
+          
+        }
+	}
+
+    &__input-description{
+        height: 143px;
+        border: 1px solid $clrGlobalTextLabelStyle;
+        border-radius: 4px;
+        margin-bottom: 32px;
+        padding-bottom: 100px;
+        padding-left: 16px;
+        @media (min-width: 768px) {
+    
+        }
+        @media (min-width: 1440px) {
+            
+            padding-bottom: 50px;
+            height: 94px;
+        }
+    }
+	&upload-main__label-description{
+
+        @media (min-width: 768px) {
+    
+        }
+        @media (min-width: 1440px) {
+          
+        }
+	}
+
+	&__button-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+        }
+        @media (min-width: 1440px) {
+            display: flex;
+            justify-content: flex-end;
+        }
+	}
+
+	&__button-cancel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 100%;
+        border-radius: 4px;
+        color: black;
+        text-decoration: none;
+        @media (min-width: 768px) {
+            width: 160px;
+        }
+        @media (min-width: 1440px) {
+          
+        }
+	}
+	&__button-publish{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 100%;
+        background: $clrBrainFlixCtaTextLink;
+        border-radius: 4px;
+        color: white;
+        text-decoration: none;
+        &:hover{
+            background: $clrBrainFlixCtaHover;
+        }
+        @media (min-width: 768px) {
+            width: 160px;
+        }
+        @media (min-width: 1440px) {
+          
+        }
+	}
+
+}
